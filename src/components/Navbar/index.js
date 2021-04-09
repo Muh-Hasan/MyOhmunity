@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="bg-white flex justify-center p-4">
       <div className="w-32">
-        <img src={Logo} alt="logo" className="min-w-full" />
+        <img src={Logo} alt="logo" className="" />
       </div>
     </div>
   )
