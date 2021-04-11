@@ -1,6 +1,10 @@
 import React from "react"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import Navbar from "../components/Navbar"
 import ImgOne from "../assets/imgOne.png"
+import ImgTwo from "../assets/imgTwo.jpg"
+import Carousel from "../components/Carousel"
 export default function Home() {
   return (
     <div>
@@ -21,6 +25,18 @@ export default function Home() {
             around the world.
           </h1>
         </div>
+      </section>
+      <section>
+        <div>
+          <img
+            src={ImgTwo}
+            alt="imgTwo"
+            className="w-full min-h-screen object-cover"
+          />
+        </div>
+      </section>
+      <section>
+        <Carousel />
       </section>
     </div>
   )

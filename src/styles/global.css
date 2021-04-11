@@ -2,12 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Lora */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&display=swap');
-
-.bg-FA{
-    background-color: #FAF9F7;
+/* Lora Roboto Mono Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+html,body
+{
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px !important;
+    overflow-x: hidden; 
 }
-.fcolor-63{
-    color: #637470;
+.bg-FA {
+  background-color: #faf9f7;
+}
+.fcolor-63 {
+  color: #637470;
+}
+.mockup-img{
+  height: 750px;
+  width: 500px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
