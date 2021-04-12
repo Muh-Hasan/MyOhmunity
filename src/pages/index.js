@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Navbar from "../components/Navbar"
 import ImgOne from "../assets/imgOne.png"
 import ImgTwo from "../assets/imgTwo.jpg"
+import ImgThree from "../assets/imgThree.jpg"
 import Carousel from "../components/Carousel"
 export default function Home() {
   return (
@@ -30,6 +31,18 @@ export default function Home() {
         <div>
           <img
             src={ImgTwo}
+            alt="imgTwo"
+            className="w-full min-h-screen object-cover"
+          />
+        </div>
+      </section>
+      <section>
+        <Carousel />
+      </section>
+      <section>
+        <div>
+          <img
+            src={ImgThree}
             alt="imgTwo"
             className="w-full min-h-screen object-cover"
           />

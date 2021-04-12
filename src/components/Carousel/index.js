@@ -4,6 +4,7 @@ import Slider from "react-slick"
 import ImgOne from "../../assets/yogis1.png"
 
 const Carousel = () => {
+
   const settings = {
     dots: true,
     fade: true,
@@ -13,12 +14,7 @@ const Carousel = () => {
     slidesToScroll: 1,
   }
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" })
-  const style = {
-    background: `rgb(111, 109, 136)`,
-    // "@media (max-width: 768px)": {
-    //   background: `linear-gradient(to bottom, rgb(111, 109, 136) 50%, white 40%)`,
-    // },
-  }
+  
   return (
     <>
       <div
@@ -56,7 +52,3 @@ const Carousel = () => {
 }
 
 export default Carousel
-
-// className="min-h-screen"
-//       style={{ backgroundColor: "#6F6D88" }}
-// flex items-center justify-center md:flex-col-reverse

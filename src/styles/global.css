@@ -4,7 +4,7 @@
 
 /* Lora Roboto Mono Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
-html,body
+/* html,body
 {
     min-width: 100%;
     width: 100%;
@@ -12,7 +12,7 @@ html,body
     margin: 0px;
     padding: 0px !important;
     overflow-x: hidden; 
-}
+} */
 .bg-FA {
   background-color: #faf9f7;
 }
@@ -44,4 +44,16 @@ html,body
   .container {
     width: 1170px;
   }
+}
+
+.some{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+.contain{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
 }
