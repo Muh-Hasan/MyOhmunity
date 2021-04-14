@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-purple{
+    color: #6F6C89,
+  }
+  .bg-purple{
+    background-color: #6F6C89,
+  }
+}
+
 /* Lora Roboto Mono Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
