@@ -5,7 +5,10 @@ import Navbar from "../components/Navbar"
 import ImgOne from "../assets/imgOne.png"
 import ImgTwo from "../assets/imgTwo.jpg"
 import ImgThree from "../assets/imgThree.jpg"
+import ImgFour from "../assets/imgFour.png"
+import GoogleBtn from "../assets/googlePlay.png"
 import Carousel from "../components/Carousel"
+import BottomCarousel from "../components/Carousel/BottomCarousel"
 export default function Home() {
   return (
     <div>
@@ -50,6 +53,43 @@ export default function Home() {
       </section>
       <section>
         <Carousel />
+      </section>
+      {/* <section className="h-min-full">
+        <div className="container flex items-center justify-between">
+          <div>
+            <div>
+              <h3>There is no better time than now.</h3>
+            </div>
+            <div>
+              <div>
+                <img src={GoogleBtn} alt='googlebtn' />
+              </div>
+              <div>
+                <img src={GoogleBtn} alt='goo' />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src={ImgFour} alt='imgFour' />
+          </div>
+        </div>
+      </section> */}
+      <section>
+        <div className="container mt-16	mb-8">
+          <div className="font-roboMono uppercase text-base text-center text-xl leading-10">
+            <span> follow us on</span>
+            <span className="fontColor-green"> instagram </span>
+            <span>and share your journey with us.</span>
+          </div>
+        </div>
+        <div className="mb-20">
+          <div className="font-roboMono uppercase text-base text-center text-xl">
+            <p>#MYOHMUNITY</p>
+          </div>
+        </div>
+        <div>
+          <BottomCarousel />
+        </div>
       </section>
     </div>
   )
