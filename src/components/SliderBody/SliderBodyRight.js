@@ -3,7 +3,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
   const isMobile = useBreakpoint()
-  console.log(bgColor);
+  console.log(bgColor)
   return (
     <div>
       <div
@@ -52,7 +52,11 @@ const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
             </div>
           </div>
           <div className="mt-8">
-            <img src={isMobile.md ? imgMobile : img} alt={title} className="mockup-img md:mb-8 md:mt-8" />
+            <img
+              src={isMobile.md ? imgMobile : img}
+              alt={title}
+              className="mockup-img md:mb-8 md:mt-8"
+            />
           </div>
         </div>
       </div>

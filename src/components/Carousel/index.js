@@ -29,7 +29,7 @@ const Carousel = () => {
           <SliderBodyRight
             bgColor="rgb(111, 109, 136)"
             title="Practice with 
-the best teachers"
+            the best teachers"
             img={ImgOne}
             imgMobile={ImgOneMobile}
             description="Take classes in-person at nearby studios, outdoors or from the comfort of your home through our live virtual sessions. "
