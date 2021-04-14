@@ -1,15 +1,19 @@
 import React from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-const SliderBodyRight = ({ bgColor, title, description, img }) => {
+const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
   const isMobile = useBreakpoint()
+  console.log(bgColor);
   return (
     <div>
       <div
         style={{
-          background: isMobile.md
-            ? `linear-gradient(to top, ${bgColor} 60%, white 40%)`
-            : `linear-gradient(to right, ${bgColor} 65%, white 30%)`,
+          background:
+            bgColor === "rgb(111, 109, 136)"
+              ? isMobile.md
+                ? `linear-gradient(to top, ${bgColor} 60%, white 40%)`
+                : `linear-gradient(to right, ${bgColor} 65%, white 30%)`
+              : bgColor,
         }}
         className="min-h-screen"
       >
@@ -18,7 +22,9 @@ const SliderBodyRight = ({ bgColor, title, description, img }) => {
             <div className="flex md:justify-center">
               <div
                 className={`w-14 h-0.5 ${
-                  bgColor === "rgb(111, 109, 136)" ? "bg-white" : "bg-purple"
+                  bgColor === "rgb(111, 109, 136)"
+                    ? "bg-white"
+                    : "background-purple"
                 }`}
               ></div>
             </div>
@@ -35,7 +41,7 @@ const SliderBodyRight = ({ bgColor, title, description, img }) => {
             </div>
             <div>
               <p
-                className={`font-roboto ${
+                className={`font-roboto md:mb-8 ${
                   bgColor === "rgb(111, 109, 136)"
                     ? "text-white"
                     : "text-purple"
@@ -46,7 +52,7 @@ const SliderBodyRight = ({ bgColor, title, description, img }) => {
             </div>
           </div>
           <div className="mt-8">
-            <img src={img} alt={title} className="mockup-img" />
+            <img src={isMobile.md ? imgMobile : img} alt={title} className="mockup-img md:mb-8 md:mt-8" />
           </div>
         </div>
       </div>
