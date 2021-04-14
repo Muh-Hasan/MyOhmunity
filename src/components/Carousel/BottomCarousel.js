@@ -17,7 +17,7 @@ const BottomCarousel = () => {
     <div className="ml-4 bottomCarousel">
       <Swiper
         spaceBetween={30}
-        slidesPerView="auto"
+        slidesPerView={3}
         onSlideChange={() => console.log("slide change")}
         onSwiper={swiper => console.log(swiper)}
       >

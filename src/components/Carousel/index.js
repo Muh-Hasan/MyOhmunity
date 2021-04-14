@@ -2,9 +2,9 @@ import React from "react"
 import { useMediaQuery } from "react-responsive"
 import Slider from "react-slick"
 import ImgOne from "../../assets/yogis1.png"
+import SliderBodyRight from "../SliderBody/SliderBodyRight"
 
 const Carousel = () => {
-
   const settings = {
     dots: true,
     fade: true,
@@ -14,40 +14,30 @@ const Carousel = () => {
     slidesToScroll: 1,
   }
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" })
-  
+
   return (
-    <>
-      <div
-        style={{
-          background: isMobile
-            ? `linear-gradient(to top, ${"rgb(111, 109, 136)"} 60%, white 40%)`
-            : `linear-gradient(to right, ${"rgb(111, 109, 136)"} 65%, white 30%)`,
-        }}
-        className="min-h-screen"
-      >
-        <div className="flex items-center justify-center md:flex-col-reverse  container">
-          <div className="w-2/5 text-left md:text-center md:w-full">
-            <div className="flex md:justify-center">
-              <div className="w-14 h-0.5 bg-white"></div>
-            </div>
-            <div className=" my-8 ">
-              <h2 className="font-roboMono text-white	text-3xl leading-10 uppercase">
-                Practice with <br /> the best teachers
-              </h2>
-            </div>
-            <div>
-              <p className="font-roboto text-white text-lg w-4/5 md:w-full">
-                Take classes in-person at nearby studios, outdoors or from the
-                comfort of your home through our live virtual sessions.
-              </p>
-            </div>
-          </div>
-          <div className="mt-8">
-            <img src={ImgOne} className="mockup-img" />
-          </div>
+    <div>
+      <Slider {...settings}>
+        <div>
+          <SliderBodyRight
+            bgColor="rgb(111, 109, 136)"
+            title="Practice with 
+the best teachers"
+            img={ImgOne}
+            description="Take classes in-person at nearby studios, outdoors or from the comfort of your home through our live virtual sessions. "
+          />
         </div>
-      </div>
-    </>
+        {/* <div>
+          <SliderBodyRight bgColor="" title="" img={} description='' />
+        </div>
+        <div>
+          <SliderBodyRight bgColor="" title="" img={} description='' />
+        </div>
+        <div>
+          <SliderBodyRight bgColor="" title="" img={} description='' />
+        </div> */}
+      </Slider>
+    </div>
   )
 }
 
