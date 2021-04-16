@@ -4,30 +4,38 @@
 /* Lora Roboto Mono Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
-html,body {
-  height:100%;
+html,
+body {
+  height: 100%;
+}
+.slider-right .slick-dots {
+  text-align: left;
+  bottom: 25px;
+}
+.slider-right .slick-dots li button:before{
+  font-size: 8px;
 }
 
-.img-min-h{
+.img-min-h {
   min-height: 80vh;
 }
-.leading-11{
+.leading-11 {
   line-height: 4rem;
 }
 
-.text-purple{
-  color: #6F6C89
+.text-purple {
+  color: #6f6c89;
 }
-.background-purple{
-  background-color: #6F6C89 !important
+.background-purple {
+  background-color: #6f6c89 !important;
 }
 
 /* refin */
-.fontColor-green{
-  color: #8EA38D
+.fontColor-green {
+  color: #8ea38d;
 }
 
-.bottomCarousel img{
+.bottomCarousel img {
   width: 400px;
   height: 400px;
 }
@@ -38,7 +46,7 @@ html,body {
 .fcolor-63 {
   color: #637470;
 }
-.mockup-img{
+.mockup-img {
   min-height: 750px;
   min-width: 500px;
 }
@@ -50,8 +58,8 @@ html,body {
   margin-left: auto;
 }
 
-@media (max-width: 786px){
-  .mockup-img{
+@media (max-width: 786px) {
+  .mockup-img {
     height: 450px;
     width: 250px;
   }

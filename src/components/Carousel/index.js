@@ -23,47 +23,42 @@ const Carousel = () => {
     slidesToScroll: 1,
   }
   return (
-    <div>
-      {/* <Slider {...settings}> */}
-        <>
-          <SliderBodyRight
-            bgColor="rgb(111, 109, 136)"
-            title="Practice with 
+    <div className='slider-right'>
+      <Slider {...settings}>
+        <SliderBodyRight
+          bgColor="rgb(111, 109, 136)"
+          title="Practice with 
             the best teachers"
-            img={ImgOne}
-            imgMobile={ImgOneMobile}
-            description="Take classes in-person at nearby studios, outdoors or from the comfort of your home through our live virtual sessions. "
-          />
-        </>
-        {/* <> */}
-          {/* <SliderBodyRight
-            bgColor="white"
-            title="EXPAND YOUR CONSCIOUSNESS"
-            img={ImgTwo}
-            imgMobile={ImgTwoMobile}
-            description="Receive weekly articles to keep your inspiration going. Plus, discover illuminating books and documentaries to help take your practice to the next level."
-          />
-        </>
-        <>
-          <SliderBodyRight
-            bgColor="rgb(111, 109, 136)"
-            title="Get unlimited access 
+          img={ImgOne}
+          imgMobile={ImgOneMobile}
+          description="Take classes in-person at nearby studios, outdoors or from the comfort of your home through our live virtual sessions. "
+        />
+
+        <SliderBodyRight
+          bgColor="white"
+          title="EXPAND YOUR CONSCIOUSNESS"
+          img={ImgTwo}
+          imgMobile={ImgTwoMobile}
+          description="Receive weekly articles to keep your inspiration going. Plus, discover illuminating books and documentaries to help take your practice to the next level."
+        />
+
+        <SliderBodyRight
+          bgColor="rgb(111, 109, 136)"
+          title="Get unlimited access 
             to all types of yoga "
-            img={ImgThree}
-            imgMobile={ImgThreeMobile}
-            description="Sort by style, time and skill level to discover the classes that suit you best."
-          />
-        </>
-        <>
-          <SliderBodyRight
-            bgColor="white"
-            title="STAY MOTIVATED"
-            img={ImgFour}
-            imgMobile={ImgFourMobile}
-            description="Get rated by your teachers to stay motivated to and deepen your practice."
-          />
-        </> */}
-      {/* </Slider> */}
+          img={ImgThree}
+          imgMobile={ImgThreeMobile}
+          description="Sort by style, time and skill level to discover the classes that suit you best."
+        />
+
+        <SliderBodyRight
+          bgColor="white"
+          title="STAY MOTIVATED"
+          img={ImgFour}
+          imgMobile={ImgFourMobile}
+          description="Get rated by your teachers to stay motivated to and deepen your practice."
+        />
+      </Slider>
     </div>
   )
 }
