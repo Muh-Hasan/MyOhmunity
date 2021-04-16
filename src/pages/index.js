@@ -54,6 +54,9 @@ export default function Home() {
       <section>
         <Carousel />
       </section>
+      <section>
+        
+      </section>
       {/* <section className="h-min-full">
         <div className="container flex items-center justify-between">
           <div>
