@@ -24,7 +24,7 @@ const Carousel = () => {
   }
   return (
     <div>
-      <Slider {...settings}>
+      {/* <Slider {...settings}> */}
         <>
           <SliderBodyRight
             bgColor="rgb(111, 109, 136)"
@@ -35,8 +35,8 @@ const Carousel = () => {
             description="Take classes in-person at nearby studios, outdoors or from the comfort of your home through our live virtual sessions. "
           />
         </>
-        <>
-          <SliderBodyRight
+        {/* <> */}
+          {/* <SliderBodyRight
             bgColor="white"
             title="EXPAND YOUR CONSCIOUSNESS"
             img={ImgTwo}
@@ -62,8 +62,8 @@ const Carousel = () => {
             imgMobile={ImgFourMobile}
             description="Get rated by your teachers to stay motivated to and deepen your practice."
           />
-        </>
-      </Slider>
+        </> */}
+      {/* </Slider> */}
     </div>
   )
 }

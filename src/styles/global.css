@@ -8,6 +8,12 @@ html,body {
   height:100%;
 }
 
+.img-min-h{
+  min-height: 80vh;
+}
+.leading-11{
+  line-height: 4rem;
+}
 
 .text-purple{
   color: #6F6C89
@@ -33,8 +39,8 @@ html,body {
   color: #637470;
 }
 .mockup-img{
-  height: 750px;
-  width: 500px;
+  min-height: 750px;
+  min-width: 500px;
 }
 
 .container {

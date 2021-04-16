@@ -18,13 +18,13 @@ export default function Home() {
           <img
             src={ImgOne}
             alt="imgOne"
-            className="w-full min-h-screen object-cover"
+            className="w-full img-min-h object-cover"
           />
         </div>
       </section>
       <section className="flex items-center justify-center min-h-screen bg-FA">
-        <div className="w-1/2 text-center sm:w-4/5">
-          <h1 className="font-lora text-4xl	fcolor-63">
+        <div className="w-10/12	text-center sm:w-4/5">
+          <h1 className="font-lora text-5xl	fcolor-63 leading-11 sm:text-4xl">
             Ohmunity is your digital Yoga community designed to unite yogis
             around the world.
           </h1>

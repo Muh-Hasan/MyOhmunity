@@ -4,20 +4,13 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
   const isMobile = useBreakpoint()
   return (
-    <div>
-      <div
-        style={{
-          background:
-            bgColor === "rgb(111, 109, 136)"
-              ? isMobile.md
-                ? `linear-gradient(to top, ${bgColor} 60%, white 40%)`
-                : `linear-gradient(to right, ${bgColor} 65%, white 30%)`
-              : bgColor,
-        }}
-        className="min-h-screen"
-      >
-        <div className="flex items-center justify-center md:flex-col-reverse  container">
-          <div className="w-2/5 text-left md:text-center md:w-full">
+    <>
+      <div className="min-h-screen grid grid-cols-2 md:grid-cols-1">
+        <div
+          className="flex items-center justify-center text-left md:text-center w-full h-full md:order-2"
+          style={{ background: bgColor }}
+        >
+          <div className="w-1/2 md:w-full">
             <div className="flex md:justify-center">
               <div
                 className={`w-14 h-0.5 ${
@@ -50,16 +43,27 @@ const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
               </p>
             </div>
           </div>
-          <div className="mt-8">
-            <img
-              src={isMobile.md ? imgMobile : img}
-              alt={title}
-              className="mockup-img md:mb-8 md:mt-8"
-            />
-          </div>
+        </div>
+
+        <div
+          className="h-full w-full flex justify-center items-center md:order-1 md:mt-8"
+          style={{
+            background:
+              bgColor === "rgb(111, 109, 136)"
+                ? isMobile.md
+                  ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
+                  : `linear-gradient(to right, ${bgColor} 50%, white 50%)`
+                : bgColor,
+          }}
+        >
+          <img
+            src={isMobile.md ? imgMobile : img}
+            alt={title}
+            className="mockup-img md:mb-8 md:mt-8"
+          />
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
