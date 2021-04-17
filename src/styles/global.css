@@ -8,6 +8,16 @@ html,
 body {
   height: 100%;
 }
+.bottomCarouselMobile .slick-list {
+  padding-left: 0px !important;
+}
+.bottomCarouselMobile img {
+  height: 400px;
+  width: 600px;
+}
+.bottomCarouselMobile {
+  margin-left: 30px;
+}
 
 .bottomCarousel .slick-slider {
   width: 100%;
