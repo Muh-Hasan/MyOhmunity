@@ -8,39 +8,29 @@ html,
 body {
   height: 100%;
 }
-
-.mockup-img-1{
-    width: 500px;
+.mockup-img-1 {
+  width: 500px;
 }
-.mockup-img-container{
+.mockup-img-container {
   height: 700px;
   overflow: hidden;
 }
-.btn-contain img{
+.btn-contain img {
   max-width: 150px;
 }
-.background-gray{
-  background-color: #D8DCDD;
+.background-gray {
+  background-color: #d8dcdd;
 }
-
-
-.slider-left .slick-dots{
-text-align: right;
-bottom: 25px;
+.slider-left .slick-dots {
+  text-align: right;
+  bottom: 25px;
 }
-/* .slider-left .slick-track{
-  background-color: #637470;
-} */
 .slider-right .slick-dots {
   text-align: left;
   bottom: 25px;
 }
-.slick-dots li button:before{
+.slick-dots li button:before {
   font-size: 8px;
-}
-.slider-right .slick-track{
-  background-image: linear-gradient(to bottom,  white 50% , rgb(111, 109, 136)50%)
-  /* background:rgb(111, 109, 136); */
 }
 .img-min-h {
   min-height: 80vh;
@@ -48,7 +38,7 @@ bottom: 25px;
 .leading-11 {
   line-height: 4rem;
 }
-.text-green{
+.text-green {
   color: #637470;
 }
 .text-purple {
@@ -57,7 +47,7 @@ bottom: 25px;
 .background-purple {
   background-color: #6f6c89 !important;
 }
-.background-green{
+.background-green {
   background-color: #637470 !important;
 }
 
@@ -94,6 +84,15 @@ bottom: 25px;
     width: 250px;
     min-height: unset !important;
     min-width: unset !important;
+  }
+  /* .slider-left .slick-track {
+    background-color: #637470;
+  }
+  .slider-right .slick-track {
+    background: rgb(111, 109, 136);
+  } */
+  .whitespace-rm{
+    height: 250px;
   }
 }
 @media (min-width: 768px) {

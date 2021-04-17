@@ -25,7 +25,7 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
         </div>
 
         <div
-          className="flex items-center justify-center text-left md:text-center w-full h-full md:order-2"
+          className="flex items-center justify-center text-left md:text-center w-full h-full whitespace-rm md:order-2"
           style={{ background: bgColor }}
         >
           <div className="w-1/2 md:w-full">
@@ -51,7 +51,7 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
             </div>
             <div>
               <p
-                className={`font-roboto md:mb-8 ${
+                className={`font-roboto md:pb-8 ${
                   bgColor === "#637470"
                     ? "text-white"
                     : "text-green"

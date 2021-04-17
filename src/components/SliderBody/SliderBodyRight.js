@@ -7,7 +7,7 @@ const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
     <>
       <div className="min-h-screen grid grid-cols-2 md:grid-cols-1">
         <div
-          className="flex items-center justify-center text-left md:text-center w-full h-full md:order-2"
+          className="flex items-center justify-center text-left md:text-center w-full h-full md:order-2 whitespace-rm"
           style={{ background: bgColor }}
         >
           <div className="w-1/2 md:w-full">
@@ -33,7 +33,7 @@ const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
             </div>
             <div>
               <p
-                className={`font-roboto md:mb-8 ${
+                className={`font-roboto md:pb-8 ${
                   bgColor === "rgb(111, 109, 136)"
                     ? "text-white"
                     : "text-purple"
