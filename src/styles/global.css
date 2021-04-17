@@ -15,7 +15,9 @@ body {
 .slider-right .slick-dots li button:before{
   font-size: 8px;
 }
-
+.slider-right .slick-track{
+  background:rgb(111, 109, 136);
+}
 .img-min-h {
   min-height: 80vh;
 }
@@ -62,6 +64,8 @@ body {
   .mockup-img {
     height: 450px;
     width: 250px;
+    min-height: unset !important;
+    min-width: unset !important;
   }
 }
 @media (min-width: 768px) {
