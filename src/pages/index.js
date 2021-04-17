@@ -7,6 +7,7 @@ import ImgTwo from "../assets/imgTwo.jpg"
 import ImgThree from "../assets/imgThree.jpg"
 import ImgFour from "../assets/imgFour.png"
 import GoogleBtn from "../assets/googlePlay.png"
+import AppleBtn from "../assets/apple.png"
 import BottomCarousel from "../components/Carousel/BottomCarousel"
 import CarouselRight from "../components/Carousel/CarouselRight"
 import CarouselLeft from "../components/Carousel/CarouselLeft"
@@ -26,7 +27,7 @@ export default function Home() {
       </section>
       <section className="flex items-center justify-center min-h-screen bg-FA">
         <div className="w-10/12	text-center sm:w-4/5">
-          <h1 className="font-lora text-5xl	fcolor-63 leading-11 sm:text-4xl">
+          <h1 className="font-lora text-5xl	fcolor-63 leading-11 md:text-4xl">
             Ohmunity is your digital Yoga community designed to unite yogis
             around the world.
           </h1>
@@ -56,26 +57,32 @@ export default function Home() {
       <section>
         <CarouselLeft />
       </section>
-      {/* <section className="h-min-full">
-        <div className="container flex items-center justify-between">
-          <div>
-            <div>
-              <h3>There is no better time than now.</h3>
-            </div>
-            <div>
-              <div>
-                <img src={GoogleBtn} alt='googlebtn' />
+      <section className="">
+        <div className="min-h-screen grid grid-cols-2 md:grid-cols-1 background-gray">
+          <div className="h-full w-full flex justify-center items-center">
+            <div className="w-1/2 md:w-full md:mb-12">
+              <div className='mb-12 md:text-center md:mt-12'>
+                <h3 className="font-lora text-3xl	fcolor-63 leading-10">
+                  There is no better time than now.
+                </h3>
               </div>
-              <div>
-                <img src={GoogleBtn} alt='goo' />
+              <div className="flex btn-contain md:justify-center md:flex-col md:items-center">
+                <div className='md:mb-8 md:mr-0 mr-8'>
+                  <img src={GoogleBtn} alt="googlebtn" />
+                </div>
+                <div>
+                  <img src={AppleBtn} alt="appleBtn" />
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <img src={ImgFour} alt='imgFour' />
+          <div className="flex items-center justify-center  mt-12">
+            <div className='mockup-img-container'>
+            <img src={ImgFour} alt="imgFour" className="mockup-img-1" />
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section>
         <div className="container mt-16	mb-8">
           <div className="font-roboMono uppercase text-base text-center text-xl leading-10">

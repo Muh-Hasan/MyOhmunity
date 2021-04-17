@@ -8,9 +8,25 @@ html,
 body {
   height: 100%;
 }
+
+.mockup-img-1{
+    width: 500px;
+}
+.mockup-img-container{
+  height: 700px;
+  overflow: hidden;
+}
+.btn-contain img{
+  max-width: 150px;
+}
+.background-gray{
+  background-color: #D8DCDD;
+}
+
+
 .slider-left .slick-dots{
 text-align: right;
-bottom: 25;
+bottom: 25px;
 }
 /* .slider-left .slick-track{
   background-color: #637470;
