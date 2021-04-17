@@ -100,6 +100,13 @@ export default function Home() {
         <div>
           <BottomCarousel />
         </div>
+        <div className='flex justify-center items-center flex-col background-brown'>
+          <div className='text-center font-roboMono text-lg leading-10 text-white	'>
+            <p>Copyright © 2021 KRANBOS LLC</p>
+            <p>ALL RIGHTS RESERVED.</p>
+            <p>Terms | Privacy</p>
+          </div>
+        </div>
       </section>
     </div>
   )
