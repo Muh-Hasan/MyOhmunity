@@ -12,7 +12,7 @@ body {
   width: 500px;
 }
 .mockup-img-container {
-  height: 700px;
+  height: 650px;
   overflow: hidden;
 }
 .btn-contain img {
@@ -85,14 +85,15 @@ body {
     min-height: unset !important;
     min-width: unset !important;
   }
-  /* .slider-left .slick-track {
-    background-color: #637470;
-  }
-  .slider-right .slick-track {
-    background: rgb(111, 109, 136);
-  } */
   .whitespace-rm{
     height: 250px;
+  }
+  .max-h-update{
+    max-height: 150vh;
+  }
+  .mockup-img-container{
+    height: 600px;
+    overflow: hidden;
   }
 }
 @media (min-width: 768px) {

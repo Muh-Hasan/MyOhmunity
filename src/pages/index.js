@@ -58,7 +58,7 @@ export default function Home() {
         <CarouselLeft />
       </section>
       <section className="">
-        <div className="min-h-screen grid grid-cols-2 md:grid-cols-1 background-gray">
+        <div className="max-h-screen max-h-update grid grid-cols-2 md:grid-cols-1 background-gray">
           <div className="h-full w-full flex justify-center items-center">
             <div className="w-1/2 md:w-full md:mb-12">
               <div className='mb-12 md:text-center md:mt-12'>
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      
+
       <section>
         <div className="container mt-16	mb-8">
           <div className="font-roboMono uppercase text-base text-center text-xl leading-10">
