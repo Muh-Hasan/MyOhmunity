@@ -1,53 +1,44 @@
 import React from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-// import "swiper/swiper.scss"
-import "swiper/swiper-bundle.min.css"
+// import {
+//   CarouselProvider,
+//   Slider,
+//   Slide,
+//   ButtonBack,
+//   ButtonNext
+// } from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css"
+import { useBreakpoint } from "gatsby-plugin-breakpoints"
+import Slider from "react-slick"
 import ImgOne from "../../assets/bottomImgOne.png"
 import ImgTwo from "../../assets/bottomImgTwo.png"
 import ImgThree from "../../assets/bottomImgThree.png"
+
 const BottomCarousel = () => {
+  const isMobile = useBreakpoint()
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
   }
   return (
-    <div className="ml-4 bottomCarousel">
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={swiper => console.log(swiper)}
-      >
-        <SwiperSlide>
+    <div className="bottomCarousel">
+      {isMobile.md ? (
+        ""
+      ) : (
+        <Slider {...settings}>
           <div>
-            <img src={ImgOne} alt="bottomImgOne" />
+            <img src={ImgTwo} alt="slide-1" />
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
           <div>
-            <img src={ImgTwo} alt="bottomImgTwo" />
+            <img src={ImgOne} alt="slide-2" />
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
           <div>
-            <img src={ImgThree} alt="bottomImgThree" />
+            <img src={ImgThree} alt="slide-3" />
           </div>
-        </SwiperSlide>
-      </Swiper>
-      {/* <Slider {...settings}>
-        <div>
-          <img src={ImgOne} alt="bottomImgOne" />
-        </div>
-        <div>
-          <img src={ImgTwo} alt="bottomImgTwo" />
-        </div>
-        <div>
-          <img src={ImgThree} alt="bottomImgThree" />
-        </div>
-      </Slider> */}
+        </Slider>
+      )}
     </div>
   )
 }

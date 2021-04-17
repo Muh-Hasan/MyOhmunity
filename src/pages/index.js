@@ -57,17 +57,17 @@ export default function Home() {
       <section>
         <CarouselLeft />
       </section>
-      <section className="">
+      <section>
         <div className="max-h-screen max-h-update grid grid-cols-2 md:grid-cols-1 background-gray">
           <div className="h-full w-full flex justify-center items-center">
             <div className="w-1/2 md:w-full md:mb-12">
-              <div className='mb-12 md:text-center md:mt-12'>
+              <div className="mb-12 md:text-center md:mt-12">
                 <h3 className="font-lora text-3xl	fcolor-63 leading-10">
                   There is no better time than now.
                 </h3>
               </div>
               <div className="flex btn-contain md:justify-center md:flex-col md:items-center">
-                <div className='md:mb-8 md:mr-0 mr-8'>
+                <div className="md:mb-8 md:mr-0 mr-8">
                   <img src={GoogleBtn} alt="googlebtn" />
                 </div>
                 <div>
@@ -77,13 +77,12 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center justify-center  mt-12">
-            <div className='mockup-img-container'>
-            <img src={ImgFour} alt="imgFour" className="mockup-img-1" />
+            <div className="mockup-img-container">
+              <img src={ImgFour} alt="imgFour" className="mockup-img-1" />
             </div>
           </div>
         </div>
       </section>
-
 
       <section>
         <div className="container mt-16	mb-8">
