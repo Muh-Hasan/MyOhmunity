@@ -89,12 +89,13 @@ body {
     height: 250px;
   }
   .max-h-update{
-    max-height: 150vh;
-  }
-  .mockup-img-container{
-    height: 600px;
+    max-height: 125vh;
     overflow: hidden;
   }
+  /* .mockup-img-container{
+    height: 600px;
+    overflow: hidden;
+  } */
 }
 @media (min-width: 768px) {
   .container {
