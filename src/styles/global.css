@@ -8,15 +8,23 @@ html,
 body {
   height: 100%;
 }
+.slider-left .slick-dots{
+text-align: right;
+bottom: 25;
+}
+/* .slider-left .slick-track{
+  background-color: #637470;
+} */
 .slider-right .slick-dots {
   text-align: left;
   bottom: 25px;
 }
-.slider-right .slick-dots li button:before{
+.slick-dots li button:before{
   font-size: 8px;
 }
 .slider-right .slick-track{
-  background:rgb(111, 109, 136);
+  background-image: linear-gradient(to bottom,  white 50% , rgb(111, 109, 136)50%)
+  /* background:rgb(111, 109, 136); */
 }
 .img-min-h {
   min-height: 80vh;
@@ -24,15 +32,19 @@ body {
 .leading-11 {
   line-height: 4rem;
 }
-
+.text-green{
+  color: #637470;
+}
 .text-purple {
   color: #6f6c89;
 }
 .background-purple {
   background-color: #6f6c89 !important;
 }
+.background-green{
+  background-color: #637470 !important;
+}
 
-/* refin */
 .fontColor-green {
   color: #8ea38d;
 }

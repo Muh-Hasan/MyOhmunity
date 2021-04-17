@@ -7,8 +7,10 @@ import ImgTwo from "../assets/imgTwo.jpg"
 import ImgThree from "../assets/imgThree.jpg"
 import ImgFour from "../assets/imgFour.png"
 import GoogleBtn from "../assets/googlePlay.png"
-import Carousel from "../components/Carousel"
 import BottomCarousel from "../components/Carousel/BottomCarousel"
+import CarouselRight from "../components/Carousel/CarouselRight"
+import CarouselLeft from "../components/Carousel/CarouselLeft"
+
 export default function Home() {
   return (
     <div>
@@ -40,7 +42,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <Carousel />
+        <CarouselRight />
       </section>
       <section>
         <div>
@@ -52,10 +54,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <Carousel />
-      </section>
-      <section>
-        
+        <CarouselLeft />
       </section>
       {/* <section className="h-min-full">
         <div className="container flex items-center justify-between">

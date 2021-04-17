@@ -11,7 +11,7 @@ import ImgThreeMobile from "../../assets/yogis3-mobile.png"
 import ImgFourMobile from "../../assets/yogis4-mobile.png"
 import SliderBodyRight from "../SliderBody/SliderBodyRight"
 
-const Carousel = () => {
+const CarouselRight = () => {
   const isMobile = useBreakpoint()
   const settings = {
     dots: isMobile.md ? false : true,
@@ -63,4 +63,4 @@ const Carousel = () => {
   )
 }
 
-export default Carousel
+export default CarouselRight
