@@ -3,71 +3,30 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
-.background-brown{
+.background-brown {
   background-color: #424242;
   min-height: 50vh;
 }
 
-.bottomCarouselDesktop{
+.bottomCarouselDesktop {
   overflow: hidden;
 }
 
-
-.bottomCarousel .slick-slider {
-  width: 100%;
-  background-color: transparent;
+.bottomCarouselDesktop img {
+  max-height: 400px;
+  max-width: 500px;
 }
-.bottomCarousel .slick-track {
-  display: flex !important;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: auto;
-  justify-content: space-around;
+/* .slick-current,
+.slick-center, 
+.slick-active {
+  transform: scale(1.1);
+  /* margin-left: 200px;
+  margin-right: 200px; */
+/* } */
+
+.slick-slide.slick-center img {
+  transform: scale(1.1);
 }
-.bottomCarousel .slick-slide {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 10px 0px;
-  margin: 10px;
-  height: auto;
-  text-align: center;
-}
-.bottomCarousel .slick-current,
-.bottomCarousel .slick-center {
-  padding: 30px 0px;
-  margin: 50px 0px;
-}
-
-.bottomCarousel .slick-prev,
-.bottomCarousel .slick-next {
-  z-index: 10;
-  top: 0px;
-  background-color: transparent;
-}
-.bottomCarousel .slick-prev {
-  left: 10px;
-}
-.bottomCarousel .slick-next {
-  right: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .mockup-img-1 {
   width: 500px;
 }
@@ -121,10 +80,10 @@
 .fcolor-63 {
   color: #637470;
 }
-.mockup-img {
+/* .mockup-img {
   min-height: 750px;
   min-width: 500px;
-}
+} */
 
 .container {
   padding-right: 15px;

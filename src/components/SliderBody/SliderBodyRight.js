@@ -53,7 +53,11 @@ const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
                 ? isMobile.md
                   ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
                   : `linear-gradient(to right, ${bgColor} 50%, white 50%)`
-                : bgColor,
+                : bgColor === "#F8F7F5"
+                ? isMobile.md
+                  ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
+                  : `linear-gradient(to right, ${bgColor} 50%, white 50%)`
+                : "",
           }}
         >
           <img

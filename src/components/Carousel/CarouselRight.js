@@ -35,7 +35,7 @@ const CarouselRight = () => {
         />
 
         <SliderBodyRight
-          bgColor="white"
+          bgColor="#F8F7F5"
           title="EXPAND YOUR CONSCIOUSNESS"
           img={ImgTwo}
           imgMobile={ImgTwoMobile}
@@ -52,7 +52,7 @@ const CarouselRight = () => {
         />
 
         <SliderBodyRight
-          bgColor="white"
+          bgColor="#F8F7F5"
           title="STAY MOTIVATED"
           img={ImgFour}
           imgMobile={ImgFourMobile}

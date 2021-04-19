@@ -21,15 +21,16 @@ const BottomCarousel = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // centerMode: true,   
+    centerMode: true,
+    centerPadding: 0   
   }
   const settingsMobile = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    centerMode: true,
-    centerPadding: "60px",
+    // centerMode: true,
+    // centerPadding: "60px",
   }
   return (
     <div

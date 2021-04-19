@@ -14,11 +14,11 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
                 ? isMobile.md
                   ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
                   : `linear-gradient(to left, ${bgColor} 50%, white 50%)`
-                : // : bgColor === "#F8F7F5"
-                  // ? isMobile.md
-                  //   ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
-                  //   : `linear-gradient(to left, ${bgColor} 50%, white 50%)`
-                  "",
+                 : bgColor === "#F8F7F5"
+                  ? isMobile.md
+                    ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
+                    : `linear-gradient(to left, ${bgColor} 50%, white 50%)`
+                 : "",
           }}
         >
           <img

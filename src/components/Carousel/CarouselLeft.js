@@ -21,6 +21,7 @@ const CarouselLeft = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true
   }
   return (
     <div className="slider-left">
@@ -33,7 +34,7 @@ const CarouselLeft = () => {
           imgMobile={ImgOneMobile}
         />
         <SliderBodyLeft
-          bgColor="white"
+          bgColor="#F8F7F5"
           title="Get feedback from 
                 your students "
           description="Learn what’s working well and what you can do to improve your student’s experience even more."
@@ -48,7 +49,7 @@ const CarouselLeft = () => {
           imgMobile={ImgThreeMobile}
         />
         <SliderBodyLeft
-          bgColor="white"
+          bgColor="#F8F7F5"
           title="Worry-Free Streaming"
           description="Ohmunity automatically emails a secure (company) livestream virtual class link to your enrolled students,  so you never need to worry about the logistical stuff. Simply log on and begin your class. "
           img={ImgFour}
