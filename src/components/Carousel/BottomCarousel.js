@@ -21,6 +21,7 @@ const BottomCarousel = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    // centerMode: true,   
   }
   const settingsMobile = {
     dots: false,
@@ -54,6 +55,7 @@ const BottomCarousel = () => {
           </Slider>
         </div>
       ) : (
+        <div className='bottomCarouselDesktop'>
         <Slider {...settings}>
           <div>
             <img src={ImgTwo} alt="slide-1" />
@@ -64,7 +66,17 @@ const BottomCarousel = () => {
           <div>
             <img src={ImgThree} alt="slide-3" />
           </div>
+          <div>
+            <img src={ImgTwo} alt="slide-1" />
+          </div>
+          <div>
+            <img src={ImgOne} alt="slide-2" />
+          </div>
+          <div>
+            <img src={ImgThree} alt="slide-3" />
+          </div>
         </Slider>
+        </div>
       )}
     </div>
   )

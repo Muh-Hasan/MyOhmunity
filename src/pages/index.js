@@ -1,6 +1,7 @@
 import React from "react"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import Navbar from "../components/Navbar"
 import ImgOne from "../assets/imgOne.png"
 import ImgTwo from "../assets/imgTwo.jpg"
@@ -13,6 +14,7 @@ import CarouselRight from "../components/Carousel/CarouselRight"
 import CarouselLeft from "../components/Carousel/CarouselLeft"
 
 export default function Home() {
+  const isMobile = useBreakpoint()
   return (
     <div>
       <Navbar />
@@ -28,7 +30,7 @@ export default function Home() {
       <section className="flex items-center justify-center min-h-screen bg-FA">
         <div className="w-10/12	text-center sm:w-4/5">
           <h1 className="font-lora text-5xl	fcolor-63 leading-11 md:text-4xl">
-            Ohmunity is your digital Yoga community designed to unite yogis
+            Ohmunity is your digital Yoga community{isMobile.md ? " ":<br />}designed to unite yogis
             around the world.
           </h1>
         </div>
@@ -58,7 +60,7 @@ export default function Home() {
         <CarouselLeft />
       </section>
       <section>
-        <div className="max-h-screen max-h-update grid grid-cols-2 md:grid-cols-1 background-gray">
+        <div className="min-h-screen max-h-update grid grid-cols-2 md:grid-cols-1 background-gray">
           <div className="h-full w-full flex justify-center items-center">
             <div className="w-1/2 md:w-full md:mb-12">
               <div className="mb-12 md:text-center md:mt-12">

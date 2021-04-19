@@ -3,24 +3,15 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
-html,
-body {
-  height: 100%;
-}
 .background-brown{
   background-color: #424242;
   min-height: 50vh;
 }
-.bottomCarouselMobile .slick-list {
-  padding-left: 0px !important;
+
+.bottomCarouselDesktop{
+  overflow: hidden;
 }
-.bottomCarouselMobile img {
-  height: 400px;
-  width: 600px;
-}
-.bottomCarouselMobile {
-  margin-left: 30px;
-}
+
 
 .bottomCarousel .slick-slider {
   width: 100%;
@@ -31,7 +22,7 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   height: auto;
-  justify-content: center;
+  justify-content: space-around;
 }
 .bottomCarousel .slick-slide {
   float: none;
@@ -39,7 +30,6 @@ body {
   vertical-align: middle;
   padding: 10px 0px;
   margin: 10px;
-  transition: all 0.3s ease;
   height: auto;
   text-align: center;
 }
@@ -61,6 +51,22 @@ body {
 .bottomCarousel .slick-next {
   right: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mockup-img-1 {
   width: 500px;
