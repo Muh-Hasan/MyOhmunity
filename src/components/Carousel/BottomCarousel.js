@@ -22,7 +22,7 @@ const BottomCarousel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: 0   
+    centerPadding: 0  
   }
   const settingsMobile = {
     dots: false,

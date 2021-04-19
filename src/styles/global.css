@@ -24,9 +24,20 @@
   margin-right: 200px; */
 /* } */
 
-.slick-slide.slick-center img {
-  transform: scale(1.1);
+.bottomCarouselDesktop .slick-center {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  transform: scale(1.25);    
 }
+
+.bottomCarouselDesktop .slick-list { 
+  padding:45px 60px !important;
+  margin-left:30px !important;
+}
+/* .slick-slide.slick-center img {
+  transform: scale(1.1);
+} */
+
 .mockup-img-1 {
   width: 500px;
 }
