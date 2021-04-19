@@ -10,10 +10,10 @@ const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
           className="flex items-center justify-center text-left md:text-center w-full h-full md:order-2 whitespace-rm"
           style={{ background: bgColor }}
         >
-          <div className="w-1/2 md:w-full">
+          <div className="w-1/2 md:w-full container">
             <div className="flex md:justify-center">
               <div
-                className={`w-14 h-0.5 ${
+                className={`w-14 h-1 ${
                   bgColor === "rgb(111, 109, 136)"
                     ? "bg-white"
                     : "background-purple"
@@ -63,7 +63,7 @@ const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
           <img
             src={isMobile.md ? imgMobile : img}
             alt={title}
-            className="mockup-img md:mb-8 md:mt-8"
+            className="mockup-img md:mb-12 md:mt-8"
           />
         </div>
       </div>

@@ -24,7 +24,7 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
           <img
             src={isMobile.md ? imgMobile : img}
             alt={title}
-            className="mockup-img md:mb-8 md:mt-8"
+            className="mockup-img md:mb-12 md:mt-8"
           />
         </div>
 
@@ -32,7 +32,7 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
           className="flex items-center justify-center text-left md:text-center w-full h-full whitespace-rm md:order-2"
           style={{ background: bgColor }}
         >
-          <div className="lg:w-1/2 xl:w-3/5 md:w-full container">
+          <div className="w-1/2 md:w-full container">
             <div className="flex md:justify-center">
               <div
                 className={`w-14 h-1 ${
@@ -44,7 +44,7 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
               <h2
                 className={`font-roboMono ${
                   bgColor === "#637470" ? "text-white" : "text-green"
-                } text-3xl leading-10 uppercase xl:text-5xl`}
+                } text-3xl leading-10 uppercase`}
               >
                 {title}
               </h2>
