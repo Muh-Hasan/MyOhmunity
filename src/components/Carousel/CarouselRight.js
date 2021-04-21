@@ -21,6 +21,7 @@ const CarouselRight = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: isMobile.md ? false : true,
   }
   return (
     <div className='slider-right'>

@@ -3,46 +3,48 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
+h1 {
+  font-size: 4vw;
+  line-height: 5vw;
+}
+h2 {
+  font-size: 3vw;
+  line-height: 4vw;
+}
+p,
+span {
+  font-size: 1.5vw;
+  line-height: 2vw;
+  font-weight: 400;
+}
+
 .background-brown {
   background-color: #424242;
   min-height: 50vh;
 }
-
 .bottomCarouselDesktop {
   overflow: hidden;
 }
-
 .bottomCarouselDesktop img {
   max-height: 400px;
-  max-width: 500px;
+  max-width: 400px;
 }
-/* .slick-current,
-.slick-center, 
-.slick-active {
-  transform: scale(1.1);
-  /* margin-left: 200px;
-  margin-right: 200px; */
-/* } */
-
 .bottomCarouselDesktop .slick-center {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  transform: scale(1.25);    
-}
-
-.bottomCarouselDesktop .slick-list { 
-  padding:45px 60px !important;
-  margin-left:30px !important;
-}
-/* .slick-slide.slick-center img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
   transform: scale(1.1);
-} */
+}
+.bottomCarouselDesktop .slick-list {
+  padding: 45px 60px !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
 
 .mockup-img-1 {
-  width: 500px;
+  width: auto;
 }
 .mockup-img-container {
-  height: 650px;
+  max-height: 80%;
   overflow: hidden;
 }
 .btn-contain img {
@@ -65,9 +67,7 @@
 .img-min-h {
   min-height: 80vh;
 }
-.leading-11 {
-  line-height: 4rem;
-}
+
 .text-green {
   color: #637470;
 }
@@ -91,11 +91,6 @@
 .fcolor-63 {
   color: #637470;
 }
-/* .mockup-img {
-  min-height: 750px;
-  min-width: 500px;
-} */
-
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -116,6 +111,12 @@
   .max-h-update {
     max-height: 125vh;
     overflow: hidden;
+  }
+  .bottomCarouselMobile1 .slick-list {
+    padding: 0 20% 0 0;
+  }
+  .leading-11 {
+    line-height: 4rem;
   }
 }
 @media (min-width: 768px) {

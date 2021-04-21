@@ -18,19 +18,23 @@ const BottomCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
     centerMode: true,
-    centerPadding: 0  
+    centerPadding: 0,
+    slidesToShow: 3,
+    speed: 1500,
+    responsive: [{
+      breakpoint: 1250,
+      settings: {
+        centerMode: true,
+        slidesToShow: 2
+      }
+    }]
   }
   const settingsMobile = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    // centerMode: true,
-    // centerPadding: "60px",
+    slidesToShow: 1.5,
   }
   return (
     <div
@@ -56,26 +60,18 @@ const BottomCarousel = () => {
           </Slider>
         </div>
       ) : (
-        <div className='bottomCarouselDesktop'>
-        <Slider {...settings}>
-          <div>
-            <img src={ImgTwo} alt="slide-1" />
-          </div>
-          <div>
-            <img src={ImgOne} alt="slide-2" />
-          </div>
-          <div>
-            <img src={ImgThree} alt="slide-3" />
-          </div>
-          <div>
-            <img src={ImgTwo} alt="slide-1" />
-          </div>
-          <div>
-            <img src={ImgOne} alt="slide-2" />
-          </div>
-          <div>
-            <img src={ImgThree} alt="slide-3" />
-          </div>
+        <div className="bottomCarouselDesktop">
+          <Slider {...settings}>
+            <div className='slides'>
+              <img src={ImgTwo} alt="slide-1" />
+            </div>
+            <div className='slides'>
+              <img src={ImgOne} alt="slide-2" />
+            </div>
+            <div className='slides'>
+              <img src={ImgThree} alt="slide-3" />
+        
+        </div>  
         </Slider>
         </div>
       )}

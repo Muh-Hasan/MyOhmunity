@@ -14,11 +14,11 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
                 ? isMobile.md
                   ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
                   : `linear-gradient(to left, ${bgColor} 50%, white 50%)`
-                 : bgColor === "#F8F7F5"
-                  ? isMobile.md
-                    ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
-                    : `linear-gradient(to left, ${bgColor} 50%, white 50%)`
-                 : "",
+                : bgColor === "#F8F7F5"
+                ? isMobile.md
+                  ? `linear-gradient(to top, ${bgColor} 50%, white 50%)`
+                  : `linear-gradient(to left, ${bgColor} 50%, white 50%)`
+                : "",
           }}
         >
           <img
@@ -32,7 +32,7 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
           className="flex items-center justify-center text-left md:text-center w-full h-full whitespace-rm md:order-2"
           style={{ background: bgColor }}
         >
-          <div className="w-1/2 md:w-full container">
+          <div className="w-4/5	md:w-11/12	 ">
             <div className="flex md:justify-center">
               <div
                 className={`w-14 h-1 ${
@@ -44,7 +44,7 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
               <h2
                 className={`font-roboMono ${
                   bgColor === "#637470" ? "text-white" : "text-green"
-                } text-3xl leading-10 uppercase`}
+                } md:text-3xl md:leading-10 uppercase`}
               >
                 {title}
               </h2>
@@ -53,7 +53,7 @@ const SliderBodyLeft = ({ bgColor, title, description, img, imgMobile }) => {
               <p
                 className={`font-roboto md:pb-8 ${
                   bgColor === "#637470" ? "text-white" : "text-green"
-                } text-lg w-4/5 md:w-full`}
+                } md:text-lg w-4/5 md:w-full`}
               >
                 {description}
               </p>

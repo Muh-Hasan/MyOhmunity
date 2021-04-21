@@ -21,7 +21,7 @@ const CarouselLeft = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true
+    adaptiveHeight: isMobile.md ? false : true,
   }
   return (
     <div className="slider-left">
