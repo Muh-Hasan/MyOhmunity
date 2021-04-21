@@ -83,7 +83,7 @@ export default function Home() {
             <p className="font-roboMono uppercase md:text-xl">#MYOHMUNITY</p>
           </div>
         </div>
-        <div>{/* <BottomCarousel /> */}</div>
+        <div><BottomCarousel /></div>
         <div className="flex justify-center items-center flex-col background-brown">
           <div className="text-center font-roboMono text-white	">
             <p className="md:text-lg md:leading-10">
