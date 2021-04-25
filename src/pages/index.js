@@ -70,9 +70,11 @@ export default function Home() {
         <div className="container mt-16	mb-8">
           <div className="font-roboMono uppercase text-base text-center">
             <span className="md:text-xl md:leading-10"> follow us on</span>
+            {" "}
             <span className="fontColor-green md:text-xl md:leading-10">
               instagram
             </span>
+            {" "}
             <span className="md:text-xl md:leading-10">
               and share your journey with us.
             </span>
