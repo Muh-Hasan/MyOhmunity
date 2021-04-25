@@ -3,14 +3,14 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
-.slick-slide > div {
+.bottomCarousel .slick-slide > div {
   transform: scale(0.8);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.slick-center > div {
+.bottomCarousel .slick-center > div {
   transform: scale(1);
 }
-.slider__item > img {
+.bottomCarousel .slider__item > img {
   width: 100%;
   height: auto;
 }

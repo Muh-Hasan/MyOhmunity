@@ -28,14 +28,13 @@ const BottomCarousel = () => {
   }
   return (
     <div
-      className="bottomCarousel "
       style={{
         background: isMobile.md
           ? "white"
           : "linear-gradient(to top, #424242 50%, white 50%)",
       }}
     >
-      <div className="bottomCarouselDesktop">
+      <div className="bottomCarousel">
         <Slider {...setting}>
           <div className="slider__item">
             <img src={ImgTwo} alt="slide-1" />
