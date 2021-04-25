@@ -7,7 +7,7 @@ import ImgThree from "../../assets/bottomImgThree.png"
 
 const BottomCarousel = () => {
   const isMobile = useBreakpoint()
-  const setting= {
+  const setting = {
     dots: false,
     arrows: false,
     infinity: true,
@@ -15,23 +15,16 @@ const BottomCarousel = () => {
     focusOnSelect: true,
     centerPadding: 0,
     slidesToShow: 3,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        slidesToShow: 1,
-
-      }
-    }, {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        slidesToShow: 1,
-
-      }
-    }]
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
   }
   return (
     <div
@@ -44,22 +37,22 @@ const BottomCarousel = () => {
     >
       <div className="bottomCarouselDesktop">
         <Slider {...setting}>
-          <div className='img-div'>
+          <div className="slider__item">
             <img src={ImgTwo} alt="slide-1" />
           </div>
-          <div className='img-div'>
+          <div className="slider__item">
             <img src={ImgOne} alt="slide-2" />
           </div>
-          <div className='img-div'>
+          <div className="slider__item">
             <img src={ImgTwo} alt="slide-1" />
           </div>
-          <div className='img-div'>
+          <div className="slider__item">
             <img src={ImgOne} alt="slide-2" />
           </div>
-          <div className='img-div'>
+          <div className="slider__item">
             <img src={ImgTwo} alt="slide-1" />
           </div>
-          <div className='img-div'>
+          <div className="slider__item">
             <img src={ImgOne} alt="slide-2" />
           </div>
         </Slider>
