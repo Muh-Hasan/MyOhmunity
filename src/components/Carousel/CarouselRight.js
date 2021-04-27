@@ -24,7 +24,7 @@ const CarouselRight = () => {
       <Slider {...settings}>
         <SliderBodyRight
           bgColor="rgb(111, 109, 136)"
-          title="Practice with \n the best teachers"
+          title="Practice with the best teachers"
           img={ImgOneMobile}
           description="Take classes in-person at nearby studios, outdoors or from the comfort of your home through our live virtual sessions. "
         />
