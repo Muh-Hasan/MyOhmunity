@@ -1,7 +1,7 @@
 import React from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
+const SliderBodyRight = ({ bgColor, title, description, img }) => {
   const isMobile = useBreakpoint()
   return (
     <>
@@ -60,11 +60,7 @@ const SliderBodyRight = ({ bgColor, title, description, img, imgMobile }) => {
                 : "",
           }}
         >
-          <img
-            src={isMobile.md ? imgMobile : img}
-            alt={title}
-            className="mockup-img md:mb-12 md:mt-8"
-          />
+          <img src={img} alt={title} className="mockup-img md:mb-12 md:mt-8" />
         </div>
       </div>
     </>
