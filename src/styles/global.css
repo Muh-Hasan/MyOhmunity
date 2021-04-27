@@ -3,6 +3,21 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
+h1 {
+  font-size: 3vw;
+  line-height: 4vw;
+}
+h2 {
+  font-size: 2vw;
+  line-height: 3vw;
+}
+p,
+span {
+  font-size: 1.5vw;
+  line-height: 2vw;
+  font-weight: 400;
+}
+
 .bottomCarousel .slick-slide > div {
   transform: scale(0.8);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -13,41 +28,6 @@
 .bottomCarousel .slider__item > img {
   width: 100%;
   height: auto;
-}
-.mockup-img {
-  max-height: 90vh;
-}
-h1 {
-  font-size: 3.5vw;
-  line-height: 5vw;
-}
-h2 {
-  font-size: 2.5vw;
-  line-height: 4vw;
-}
-p,
-span {
-  font-size: 1.5vw;
-  line-height: 2vw;
-  font-weight: 400;
-}
-.background-brown {
-  background-color: #424242;
-  min-height: 50vh;
-}
-
-.mockup-img-1 {
-  width: auto;
-}
-.mockup-img-container {
-  max-height: 80%;
-  overflow: hidden;
-}
-.btn-contain img {
-  max-width: 1000px;
-}
-.background-gray {
-  background-color: #d8dcdd;
 }
 .slider-left .slick-dots {
   text-align: right;
@@ -60,10 +40,14 @@ span {
 .slick-dots li button:before {
   font-size: 8px;
 }
-.img-min-h {
-  min-height: 80vh;
-}
 
+.background-brown {
+  background-color: #424242;
+  min-height: 50vh;
+}
+.background-gray {
+  background-color: #d8dcdd;
+}
 .text-green {
   color: #637470;
 }
@@ -76,17 +60,33 @@ span {
 .background-green {
   background-color: #637470 !important;
 }
-
 .fontColor-green {
   color: #8ea38d;
 }
-
 .bg-FA {
   background-color: #faf9f7;
 }
 .fcolor-63 {
   color: #637470;
 }
+
+.mockup-img {
+  max-height: 90vh;
+}
+.mockup-img-1 {
+  width: auto;
+}
+.mockup-img-container {
+  max-height: 80%;
+  overflow: hidden;
+}
+.btn-contain img {
+  max-width: 1000px;
+}
+.img-min-h {
+  min-height: 80vh;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
