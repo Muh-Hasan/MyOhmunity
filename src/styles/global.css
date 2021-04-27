@@ -14,7 +14,7 @@
   width: 100%;
   height: auto;
 }
-.mockup-img{
+.mockup-img {
   max-height: 90vh;
 }
 h1 {
@@ -113,6 +113,18 @@ span {
   }
   .bottomCarouselDesktop .slick-center {
     transform: unset;
+  }
+  .margin-img {
+    margin-top: -10rem;
+  }
+  .mockup-img-1 {
+    width: 500px;
+  }
+  .mockup-img-container {
+    width: 90%;
+  }
+  .btn-contain img {
+    max-width: 150px;
   }
 }
 @media (min-width: 768px) {

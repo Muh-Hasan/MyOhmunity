@@ -43,7 +43,7 @@ export default function Home() {
       <section>
         <div className="min-h-screen grid grid-cols-2 md:grid-cols-1 background-gray">
           <div className="h-full w-full flex justify-center items-center">
-            <div className="w-1/2 md:w-full md:mb-12">
+            <div className="w-1/2 md:w-full">
               <div className="mb-12 md:text-center md:mt-12">
                 <h1 className="font-lora md:text-3xl	fcolor-63">
                   There is no better time than now.
@@ -59,8 +59,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex items-end justify-center  mt-12">
-            <div className="mockup-img-container">
+          <div className="flex items-end justify-center">
+            <div className="mockup-img-container margin-img">
               <img src={ImgFour} alt="imgFour" className="mockup-img-1" />
             </div>
           </div>
@@ -69,12 +69,10 @@ export default function Home() {
       <section>
         <div className="container mt-16	mb-8">
           <div className="font-roboMono uppercase text-base text-center">
-            <span className="md:text-xl md:leading-10"> follow us on</span>
-            {" "}
+            <span className="md:text-xl md:leading-10"> follow us on</span>{" "}
             <span className="fontColor-green md:text-xl md:leading-10">
               instagram
-            </span>
-            {" "}
+            </span>{" "}
             <span className="md:text-xl md:leading-10">
               and share your journey with us.
             </span>
@@ -85,7 +83,9 @@ export default function Home() {
             <p className="font-roboMono uppercase md:text-xl">#MYOHMUNITY</p>
           </div>
         </div>
-        <div><BottomCarousel /></div>
+        <div>
+          <BottomCarousel />
+        </div>
         <div className="flex justify-center items-center flex-col background-brown">
           <div className="text-center font-roboMono text-white	">
             <p className="md:text-lg md:leading-10">
