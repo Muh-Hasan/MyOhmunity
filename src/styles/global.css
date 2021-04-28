@@ -2,23 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
-
+p{
+  font-size: 1.5vw;
+  line-height: 2vw;
+  font-weight: 400;
+}
+h2{
+  font-size: 3vw;
+  line-height: 4vw;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
 h1 {
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 4vw;
+  line-height: 5vw;
 }
-h2 {
-  font-size: 3rem;
-  line-height: 4rem;
-  font-weight: 400;
-}
-p,
 span {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.5vw;
+  line-height: 2vw;
   font-weight: 400;
 }
-
+.foot-p{
+  font-size: 1.5vw;
+  line-height: 3vw;
+  font-weight: 400;
+}
 .bottomCarousel .slick-slide > div {
   transform: scale(0.8);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,7 +52,7 @@ span {
 
 .background-brown {
   background-color: #424242;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 .background-gray {
   background-color: #d8dcdd;

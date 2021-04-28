@@ -24,7 +24,7 @@ const CarouselRight = () => {
       <Slider {...settings}>
         <SliderBodyRight
           bgColor="rgb(111, 109, 136)"
-          title="Practice with the best teachers"
+          title="Practice with<br>the best teachers"
           img={ImgOneMobile}
           description="Take classes in-person at nearby studios, outdoors or from the comfort of your home through our live virtual sessions. "
         />
@@ -38,8 +38,7 @@ const CarouselRight = () => {
 
         <SliderBodyRight
           bgColor="rgb(111, 109, 136)"
-          title="Get unlimited access 
-            to all types of yoga "
+          title="Get unlimited access<br>to all types of yoga "
           img={ImgThreeMobile}
           description="Sort by style, time and skill level to discover the classes that suit you best."
         />

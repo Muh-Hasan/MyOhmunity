@@ -43,7 +43,7 @@ export default function Home() {
       <section>
         <div className="min-h-screen grid grid-cols-2 md:grid-cols-1 background-gray">
           <div className="h-full w-full flex justify-center items-center">
-            <div className="w-1/2 md:w-full">
+            <div className="w-3/4 md:w-full">
               <div className="mb-12 md:text-center md:mt-12">
                 <h1 className="font-lora md:text-3xl	fcolor-63">
                   There is no better time than now.
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="container mt-16	mb-8">
+        <div className="container mt-40	mb-8">
           <div className="font-roboMono uppercase text-base text-center">
             <span className="md:text-xl md:leading-10"> follow us on</span>{" "}
             <span className="fontColor-green md:text-xl md:leading-10">
@@ -87,12 +87,12 @@ export default function Home() {
           <BottomCarousel />
         </div>
         <div className="flex justify-center items-center flex-col background-brown">
-          <div className="text-center font-roboMono text-white	">
-            <p className="md:text-lg md:leading-10">
+          <div className="text-center font-roboMono text-white font-light uppercase ">
+            <p className="md:text-lg md:leading-10 foot-p">
               Copyright © 2021 KRANBOS LLC
             </p>
-            <p className="md:text-lg md:leading-10">ALL RIGHTS RESERVED.</p>
-            <p className="md:text-lg md:leading-10">Terms | Privacy</p>
+            <p className="md:text-lg md:leading-10 foot-p">ALL RIGHTS RESERVED.</p>
+            <p className="md:text-lg md:leading-10 foot-p">Terms | Privacy</p>
           </div>
         </div>
       </section>

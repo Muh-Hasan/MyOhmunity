@@ -3,6 +3,18 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const SliderBodyRight = ({ bgColor, title, description, img }) => {
   const isMobile = useBreakpoint()
+  const split = () => {
+    const afterSplit = title.split("<br>")
+    return afterSplit.map((v, i) => (
+      <h2
+        className={`font-roboMono ${
+          bgColor === "rgb(111, 109, 136)" ? "text-white" : "text-purple"
+        } md:text-3xl md:leading-10 uppercase`}
+      >
+        {v}
+      </h2>
+    ))
+  }
   return (
     <>
       <div className="min-h-screen grid grid-cols-2 md:grid-cols-1">
@@ -21,26 +33,32 @@ const SliderBodyRight = ({ bgColor, title, description, img }) => {
               ></div>
             </div>
             <div className=" my-8 ">
-              <h2
-                className={`font-roboMono ${
-                  bgColor === "rgb(111, 109, 136)"
-                    ? "text-white"
-                    : "text-purple"
-                } md:text-3xl md:leading-10 uppercase`}
-              >
-                {title}
-              </h2>
-            </div>
-            <div>
-              <p
-                className={`font-roboto md:pb-8 ${
-                  bgColor === "rgb(111, 109, 136)"
-                    ? "text-white"
-                    : "text-purple"
-                } md:text-lg w-4/5 md:w-full`}
-              >
-                {description}
-              </p>
+              <div className="mb-8">
+                {title.includes("<br>") ? (
+                  split()
+                ) : (
+                  <h2
+                    className={`font-roboMono ${
+                      bgColor === "rgb(111, 109, 136)"
+                        ? "text-white"
+                        : "text-purple"
+                    } md:text-3xl md:leading-10 uppercase`}
+                  >
+                    {title}
+                  </h2>
+                )}
+              </div>
+              <div>
+                <p
+                  className={`font-roboto md:pb-8 ${
+                    bgColor === "rgb(111, 109, 136)"
+                      ? "text-white"
+                      : "text-purple"
+                  } md:text-lg w-4/5 md:w-full`}
+                >
+                  {description}
+                </p>
+              </div>
             </div>
           </div>
         </div>
